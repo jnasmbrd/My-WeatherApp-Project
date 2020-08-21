@@ -18,7 +18,7 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
   let day = days[dayIndex];
 
@@ -41,7 +41,7 @@ function actualDate(date) {
     "Sep",
     "Oct",
     "Nov",
-    "Dec"
+    "Dec",
   ];
   let month = months[monthIndex];
 
@@ -84,7 +84,7 @@ function handleSubmit(event) {
 
   if (city !== "") {
     document.querySelector("#output-city").innerHTML = city;
-    weatherCondition(city);
+    searchLocation(city);
   } else {
     alert("Please type a city.");
   }
